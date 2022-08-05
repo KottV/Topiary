@@ -20,7 +20,7 @@ along with Topiary. If not, see <https://www.gnu.org/licenses/>.
 #pragma once
 #ifdef TOPIARYMODEL
 
-#include "../../Topiary/Source/Model/TopiaryListModel.h"
+#include "../Model/TopiaryListModel.h"
 
 class TopiaryPadzModel;
 

@@ -17,7 +17,7 @@ along with Topiary. If not, see <https://www.gnu.org/licenses/>.
 /////////////////////////////////////////////////////////////////////////////
 
 #pragma once
-#include "../../Topiary/Source/Model/TopiaryListModel.h"
+#include "../Model/TopiaryListModel.h"
 
 #ifdef TOPIARYMODEL
 class TOPIARYMODEL; // needs to be a defined model!

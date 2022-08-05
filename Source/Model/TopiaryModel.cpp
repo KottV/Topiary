@@ -51,7 +51,7 @@ void TopiaryModel::savePreset(String msg, String extension)
 		directory = File(filePath);
 	FileChooser myChooser(msg, directory, extension);
 
-	if (myChooser.browseForFileToOpen())
+	if (myChooser.browseForFileToSave(true))
 	{
 		filePath = f.getParentDirectory().getFullPathName();
 		f = myChooser.getResult();

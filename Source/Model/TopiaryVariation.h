@@ -28,7 +28,7 @@ CAREFUL: needs symbols:
 
 #ifdef TOPIARYMODEL
 
-#include "../../Topiary/Source/Model/TopiaryListModel.h"
+#include "../Model/TopiaryListModel.h"
 
 class TopiaryVariation : public TopiaryListModel
 {
