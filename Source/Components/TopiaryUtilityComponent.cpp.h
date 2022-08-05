@@ -261,7 +261,7 @@ void TOPIARYUTILITYCOMPONENT::paint(Graphics& g)
 	g.drawRoundedRectangle((float)recBounds.getX() + lineWidth, (float)recBounds.getY() + lineWidth, (float)recBounds.getWidth() - 2 * lineWidth, (float)recBounds.getHeight() - 2 * lineWidth, (float)lineWidth, (float)lineWidth);
 
 	// turn it into inner rectangle
-	auto inRecBounds = Rectangle<int>::Rectangle(recBounds.getX() + 3 * lineWidth, recBounds.getY() + 3 * lineWidth, recBounds.getWidth() - 6 * lineWidth, recBounds.getHeight() - 6 * lineWidth);
+	auto inRecBounds = Rectangle<int>(recBounds.getX() + 3 * lineWidth, recBounds.getY() + 3 * lineWidth, recBounds.getWidth() - 6 * lineWidth, recBounds.getHeight() - 6 * lineWidth);
 
 	// area for buttons & editors
 	//auto buttonBounds = inRecBounds.removeFromBottom(buttonH);
@@ -304,7 +304,7 @@ void TOPIARYUTILITYCOMPONENT::paint(Graphics& g)
 	g.drawRoundedRectangle((float)recBounds.getX() + lineWidth, (float)recBounds.getY() + lineWidth, (float)recBounds.getWidth() - 2 * lineWidth, (float)recBounds.getHeight() - 2 * lineWidth, (float)lineWidth, (float)lineWidth);
 
 	// turn it into inner rectangle
-	inRecBounds = Rectangle<int>::Rectangle(recBounds.getX() + 3 * lineWidth, recBounds.getY() + 3 * lineWidth, recBounds.getWidth() - 6 * lineWidth, recBounds.getHeight() - 6 * lineWidth);
+	inRecBounds = Rectangle<int>(recBounds.getX() + 3 * lineWidth, recBounds.getY() + 3 * lineWidth, recBounds.getWidth() - 6 * lineWidth, recBounds.getHeight() - 6 * lineWidth);
 
 	g.drawText("From                    To", posX + spacer, posY + lineWidth + 20, 500, labelOffset, juce::Justification::centredLeft);
 
@@ -336,7 +336,7 @@ void TOPIARYUTILITYCOMPONENT::paint(Graphics& g)
 	g.drawRoundedRectangle((float)recBounds.getX() + lineWidth, (float)recBounds.getY() + lineWidth, (float)recBounds.getWidth() - 2 * lineWidth, (float)recBounds.getHeight() - 2 * lineWidth, (float)lineWidth, (float)lineWidth);
 
 	// turn it into inner rectangle
-	inRecBounds = Rectangle<int>::Rectangle(recBounds.getX() + 3 * lineWidth, recBounds.getY() + 3 * lineWidth, recBounds.getWidth() - 6 * lineWidth, recBounds.getHeight() - 6 * lineWidth);
+	inRecBounds = Rectangle<int>(recBounds.getX() + 3 * lineWidth, recBounds.getY() + 3 * lineWidth, recBounds.getWidth() - 6 * lineWidth, recBounds.getHeight() - 6 * lineWidth);
 
 	g.drawText("From                    To", posX + spacer, posY + lineWidth + 20, 500, labelOffset, juce::Justification::centredLeft);
 
@@ -361,7 +361,7 @@ void TOPIARYUTILITYCOMPONENT::paint(Graphics& g)
 	g.drawText("Preset State", 250 + lineWidth, 200 + lineWidth, 500, labelOffset, juce::Justification::centredLeft);
 	recBounds = stateArea.removeFromBottom(stateArea.getHeight() - labelOffset);
 	g.drawRoundedRectangle((float)recBounds.getX() + lineWidth, (float)recBounds.getY() + lineWidth, (float)recBounds.getWidth() - 2 * lineWidth, (float)recBounds.getHeight() - 2 * lineWidth, (float)lineWidth, (float)lineWidth);
-	inRecBounds = Rectangle<int>::Rectangle(recBounds.getX() + 3 * lineWidth, recBounds.getY() + 3 * lineWidth, recBounds.getWidth() - 6 * lineWidth, recBounds.getHeight() - 6 * lineWidth);
+	inRecBounds = Rectangle<int>(recBounds.getX() + 3 * lineWidth, recBounds.getY() + 3 * lineWidth, recBounds.getWidth() - 6 * lineWidth, recBounds.getHeight() - 6 * lineWidth);
 
 	buttonBounds = inRecBounds.removeFromLeft(spacer);
 	buttonBounds = inRecBounds.removeFromLeft(stateButtonW);
@@ -394,7 +394,7 @@ void TOPIARYUTILITYCOMPONENT::paint(Graphics& g)
 	g.drawRoundedRectangle((float)recBounds.getX() + lineWidth, (float)recBounds.getY() + lineWidth, (float)recBounds.getWidth() - 2 * lineWidth, (float)recBounds.getHeight() - 2 * lineWidth, (float)lineWidth, (float)lineWidth);
 
 	// turn it into inner rectangle
-	inRecBounds = Rectangle<int>::Rectangle(recBounds.getX() + 3 * lineWidth, recBounds.getY() + 3 * lineWidth, recBounds.getWidth() - 6 * lineWidth, recBounds.getHeight() - 6 * lineWidth);
+	inRecBounds = Rectangle<int>(recBounds.getX() + 3 * lineWidth, recBounds.getY() + 3 * lineWidth, recBounds.getWidth() - 6 * lineWidth, recBounds.getHeight() - 6 * lineWidth);
 
 	g.drawText("From                    To", posX + spacer, posY + lineWidth + 20, 500, labelOffset, juce::Justification::centredLeft);
 
@@ -426,7 +426,7 @@ void TOPIARYUTILITYCOMPONENT::paint(Graphics& g)
 	g.drawRoundedRectangle((float)recBounds.getX() + lineWidth, (float)recBounds.getY() + lineWidth, (float)recBounds.getWidth() - 2 * lineWidth, (float)recBounds.getHeight() - 2 * lineWidth, (float)lineWidth, (float)lineWidth);
 
 	// turn it into inner rectangle
-	inRecBounds = Rectangle<int>::Rectangle(recBounds.getX() + 3 * lineWidth, recBounds.getY() + 3 * lineWidth, recBounds.getWidth() - 6 * lineWidth, recBounds.getHeight() - 6 * lineWidth);
+	inRecBounds = Rectangle<int>(recBounds.getX() + 3 * lineWidth, recBounds.getY() + 3 * lineWidth, recBounds.getWidth() - 6 * lineWidth, recBounds.getHeight() - 6 * lineWidth);
 
 	g.drawText("From                    To", posX + spacer, posY + lineWidth + 20, 500, labelOffset, juce::Justification::centredLeft);
 

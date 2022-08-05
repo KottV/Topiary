@@ -48,10 +48,10 @@ void TopiaryModel::savePreset(String msg, String extension)
 	auto directory = File::getSpecialLocation(File::userHomeDirectory);
 
 	if (filePath.compare("") == 0)
-		directory = File::File(filePath);
+		directory = File(filePath);
 	FileChooser myChooser(msg, directory, extension);
 
-	if (myChooser.browseForFileToSave(true))
+	if (myChooser.browseForFileToOpen())
 	{
 		filePath = f.getParentDirectory().getFullPathName();
 		f = myChooser.getResult();
@@ -71,7 +71,7 @@ void TopiaryModel::loadPreset(String msg, String extension)
 	auto directory = File::getSpecialLocation(File::userHomeDirectory);
 
 	if (filePath.compare("") == 0)
-		directory = File::File(filePath);
+		directory = File(filePath);
 
 	FileChooser myChooser(msg, directory, extension);
 
